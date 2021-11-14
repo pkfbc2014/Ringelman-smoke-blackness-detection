@@ -18,3 +18,5 @@ Library：AndroidX
 
 Version：202111-2.0
 最新版本发布时间：2021/11/14
+
+拍照裁剪模块引用自Github开源项目：https://github.com/YuPf1989/TakePhotoDemo
