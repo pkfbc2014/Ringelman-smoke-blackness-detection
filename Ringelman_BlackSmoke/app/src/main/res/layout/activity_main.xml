@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_launcher" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/ringelman"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="林格曼黑度值为："
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="0.75"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/lv"
+            app:layout_constraintBottom_toTopOf="@id/Smoke_concentration"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="烟雾黑度级别为："
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="0.75"
+            app:layout_constraintLeft_toRightOf="@id/ringelman"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/Smoke_concentration"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/Smoke_concentration"
+            android:layout_width="0dp"
+            app:layout_constraintHorizontal_weight="1"
+            android:layout_height="0dp"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintVertical_weight="0.75"
+            app:layout_constraintTop_toBottomOf="@id/ringelman"
+            app:layout_constraintBottom_toTopOf="@id/evaluate"
+            android:text="烟雾浓度为："/>
+        <TextView
+            android:id="@+id/evaluate"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="烟雾评价（仅供参考）："
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Smoke_concentration"
+            app:layout_constraintBottom_toTopOf="@id/Environmental_tips"
+            />
+        <TextView
+            android:id="@+id/Environmental_tips"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="环保贴士："
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/evaluate"
+            app:layout_constraintBottom_toTopOf="@id/btn_takephoto"
+            />
+        <Button
+            android:id="@+id/btn_takephoto"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="0.65"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Environmental_tips"
+            app:layout_constraintBottom_toTopOf="@id/btn_open_photo_album"
+            android:text="拍照并裁剪" />
+
+        <Button
+            android:id="@+id/btn_open_photo_album"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintVertical_weight="0.65"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_takephoto"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            android:text="打开相册并裁剪" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

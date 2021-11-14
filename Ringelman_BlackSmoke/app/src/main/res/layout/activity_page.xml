@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shouye">
+
+    <!-- 进入按钮 -->
+    <Button
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="140dp"
+        android:layout_marginRight="70dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:alpha="0"
+        >
+    </Button>
+
+    <!-- 开发者名单按钮 -->
+    <Button
+        android:id="@+id/btn_name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="77dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:alpha="0"
+        >
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/hello"
+        app:layout_constraintBottom_toBottomOf="@id/hello"
+        app:layout_constraintLeft_toLeftOf="@id/hello"
+        app:layout_constraintRight_toRightOf="@id/hello"
+        android:text="☞ 开始            "
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="☞ 开发者名单"
+        app:layout_constraintTop_toTopOf="@id/btn_name"
+        app:layout_constraintBottom_toBottomOf="@id/btn_name"
+        app:layout_constraintLeft_toLeftOf="@id/btn_name"
+        app:layout_constraintRight_toRightOf="@id/btn_name"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Version：202111-2.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        >
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
