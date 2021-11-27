@@ -11,12 +11,17 @@ android {
         debug {
         }
     }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+    }
+
     compileSdkVersion 29
     defaultConfig {
         applicationId "com.rain.takephotodemo"
-        minSdkVersion 19
+        minSdkVersion 26
         //noinspection ExpiredTargetSdkVersion
-        targetSdkVersion 27
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -31,16 +36,26 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     //implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation group: 'com.dtflys.forest', name: 'forest-core', version: '1.5.1'
+    implementation 'com.google.code.gson:gson:2.8.4'
+    implementation 'com.github.yalantis:ucrop:2.2.6-native'
+    implementation 'com.github.zzz40500:android-shapeLoadingView:1.0.3.2'
+    implementation 'id.zelory:compressor:3.0.1'
+    implementation 'com.android.support:appcompat-v7:28.0.0-alpha1'
     implementation 'androidx.appcompat:appcompat:1.0.0-alpha1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'com.google.android.material:material:1.3.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    provided files('C:/Program Files/Java/jdk-15.0.1/rt.jar')
+    //provided files('C:/Program Files/Java/jdk-15.0.1/rt.jar')
 }
