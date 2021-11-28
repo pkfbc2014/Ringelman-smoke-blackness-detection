@@ -1,4 +1,7 @@
 # Ringelman-smoke-blackness-detection
+
+林格曼黑度检测APP
+
 2021-2022 第一学期《Android软件开发》课程大作业——组队项目
 
 本App是吉林大学计算机科学与技术学院《Android软件开发》课程多人项目
