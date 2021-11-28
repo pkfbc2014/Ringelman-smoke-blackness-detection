@@ -1,6 +1,6 @@
 # Ringelman-smoke-blackness-detection
 
-林格曼黑度检测APP
+林格曼黑度检测APP for Android
 
 2021-2022 第一学期《Android软件开发》课程大作业——组队项目
 
